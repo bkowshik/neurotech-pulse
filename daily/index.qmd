@@ -1,0 +1,15 @@
+---
+title: "Daily"
+subtitle: "5–8 items, terse, source-linked. AI angle leads where present."
+listing:
+  contents: "*/index.qmd"
+  sort: "date desc"
+  type: default
+  fields: [date, title, description, reading-time]
+  feed: true
+  page-size: 30
+  categories: true
+  sort-ui: false
+  filter-ui: true
+page-layout: full
+---

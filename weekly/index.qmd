@@ -1,0 +1,17 @@
+---
+title: "Weekly"
+subtitle: "Themes, *Frontier Watch*, what I'm watching next week."
+listing:
+  contents: "*/index.qmd"
+  sort: "date desc"
+  type: default
+  fields: [date, title, description, reading-time]
+  feed: true
+  page-size: 20
+  categories: true
+  sort-ui: false
+  filter-ui: true
+page-layout: full
+---
+
+*The first weekly issue lands at the end of the current ISO week. Until then, see the [daily archive](../daily/).*

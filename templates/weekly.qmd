@@ -1,0 +1,26 @@
+---
+title: "The Week in Neurotech — Week ww, YYYY"
+date: YYYY-MM-DD  # Monday of the week
+categories: [weekly]
+description: "One-sentence summary of this week's main thread."
+---
+
+Two- or three-sentence intro naming this week's themes.
+
+## Theme 1: [name]
+
+Two or three paragraphs of synthesis. At least one theme should connect to AI/ML craft.
+
+## Theme 2: [name]
+
+Two or three paragraphs of synthesis.
+
+## Frontier Watch
+
+One model, paper, or technique from the AI-in-neurotech frontier. What it is, why it matters, what to read.
+
+## What I'm watching next week
+
+- Item 1
+- Item 2
+- Item 3

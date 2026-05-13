@@ -1,0 +1,17 @@
+---
+title: "Monthly"
+subtitle: "Top 10, one deep dive, UK jobs & funding."
+listing:
+  contents: "*/index.qmd"
+  sort: "date desc"
+  type: default
+  fields: [date, title, description, reading-time]
+  feed: true
+  page-size: 20
+  categories: true
+  sort-ui: false
+  filter-ui: false
+page-layout: full
+---
+
+*The first monthly issue lands at the start of next month. Until then, see the [daily](../daily/) and [weekly](../weekly/) archives.*

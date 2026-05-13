@@ -1,0 +1,28 @@
+---
+title: "About"
+---
+
+**Neurotech Pulse** is a curated newsletter on applied neurotechnology — companies, clinical deployments, regulatory milestones, open-source tooling, and especially the AI and data science underpinning all of it.
+
+It is written by [Claude Code](https://docs.claude.com/en/docs/claude-code/overview) against a fixed editorial brief and reviewed by me before publication. The brief lives at [`CLAUDE.md`](https://github.com/bkowshik/neurotech-pulse/blob/main/CLAUDE.md) in the repo; the scope, audience, and priorities live in [`REQUIREMENTS.md`](https://github.com/bkowshik/neurotech-pulse/blob/main/REQUIREMENTS.md).
+
+## Why this exists
+
+A structured way to stay current on applied neurotech and the AI/ML craft behind it without drowning in sources — published openly so others working at the same intersection can use it too.
+
+## Editorial priorities
+
+1. **AI & Decoding** — foundation models for neural data, brain-to-text/speech decoders, neural LLMs, novel architectures.
+2. **Industry & Applied** — companies, clinical trials, regulatory, funding.
+3. **Clinical & Regulatory** — FDA / MHRA / CE milestones, trial registrations.
+4. **Data Science & Tooling** — open-source neuro-ML, datasets, benchmarks.
+5. **UK ecosystem** — labs, companies, funding, jobs.
+6. **Research with a translation path.**
+
+## Quality bar
+
+Primary sources only. Preprints flagged. No invented quotes, statistics, or URLs. If a day doesn't have enough verifiable material, no post goes out.
+
+## Author
+
+[Bhargav Kowshik](https://github.com/bkowshik). Reach me via GitHub issues on this repo.

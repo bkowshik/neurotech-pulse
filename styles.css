@@ -1,0 +1,24 @@
+/* Neurotech Pulse — minimal site styles */
+
+:root {
+  --np-accent: #0b6e4f;
+}
+
+.navbar-brand { font-weight: 600; }
+
+main h2 { margin-top: 2rem; }
+main h3 { margin-top: 1.5rem; }
+
+main p { line-height: 1.65; }
+
+.quarto-listing .listing-date { font-variant-numeric: tabular-nums; }
+.quarto-listing .listing-title { font-weight: 600; }
+
+a { text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+blockquote {
+  border-left: 3px solid var(--np-accent);
+  padding-left: 1rem;
+  color: #444;
+}

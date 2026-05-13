@@ -1,0 +1,29 @@
+# Quarto
+/_site/
+/.quarto/
+*.html
+!templates/*.html
+
+# Local / private notes (never push)
+*.local.md
+*.local.yml
+.local/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Python (in case we add notebooks later)
+__pycache__/
+*.pyc
+.venv/
+venv/
+.ipynb_checkpoints/
+
+**/*.quarto_ipynb
