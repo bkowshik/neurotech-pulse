@@ -22,3 +22,15 @@ blockquote {
   padding-left: 1rem;
   color: #444;
 }
+
+.marks-note {
+  background: #f0f7f4;
+  border-left: 3px solid var(--np-accent);
+  border-radius: 0 6px 6px 0;
+  padding: 1.5rem 1.75rem;
+  margin: 2rem 0;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.marks-note p { margin: 0; }

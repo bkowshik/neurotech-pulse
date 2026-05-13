@@ -7,12 +7,12 @@ project:
 
 website:
   title: "Neurotech Pulse"
-  description: "Tracking the pulse of neurotechnology — daily signals, weekly synthesis, monthly highlights."
+  description: "Tracking the pulse of applied neurotechnology — AI, decoders, devices, and the data science underneath."
   site-url: https://bkowshik.github.io/neurotech-pulse/
   repo-url: https://github.com/bkowshik/neurotech-pulse
-  repo-actions: [edit, issue]
 
   navbar:
+    title: "〰️⚡"
     background: light
     left:
       - href: index.qmd
@@ -33,7 +33,6 @@ website:
 
   page-footer:
     left: "Neurotech Pulse — curated by [Bhargav Kowshik](https://github.com/bkowshik), authored with Claude Code."
-    right: "Built with [Quarto](https://quarto.org)."
 
 format:
   html:

@@ -3,7 +3,13 @@ title: "Neurotech Pulse — DD Month YYYY"
 date: YYYY-MM-DD
 categories: [daily]
 description: "One-sentence summary of the day's lede."
+image: image.jpg
+image-alt: "One-sentence visual description for screen readers."
+resources:
+  - image.jpg
 ---
+
+![](image.jpg){fig-alt="{{< meta image-alt >}}"}
 
 One- or two-sentence framing of the day's lede.
 

@@ -3,7 +3,13 @@ title: "Neurotech Pulse — Month YYYY"
 date: YYYY-MM-01
 categories: [monthly]
 description: "One-sentence summary of the month's shape."
+image: image.jpg
+image-alt: "One-sentence visual description for screen readers."
+resources:
+  - image.jpg
 ---
+
+![](image.jpg){fig-alt="{{< meta image-alt >}}"}
 
 Three- or four-sentence intro on the month's shape.
 

@@ -3,7 +3,13 @@ title: "Neurotech Pulse — 13 May 2026"
 date: 2026-05-13
 categories: [daily, ai]
 description: "Meta's brain team drops a benchmark and a new event-detection model in the same week; a separate group shows EEG decoders flip 42% of predictions when only preprocessing changes."
+image: image.jpg
+image-alt: "Abstract EEG-style line traces flowing left to right on a deep navy background; two cyan-accented traces bifurcate and cross in the middle behind a faint network lattice."
+resources:
+  - image.jpg
 ---
+
+![](image.jpg){fig-alt="{{< meta image-alt >}}"}
 
 Launch issue. Quiet week on the industry side — the signal this week comes from preprints. Meta's brain team (Banville, d'Ascoli, Rapin, King and collaborators) released both a benchmarking framework and a new event-detection model in three days, and a separate group put the EEG decoding stack on notice about preprocessing fragility.
 

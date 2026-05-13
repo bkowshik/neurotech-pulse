@@ -55,9 +55,9 @@ The newsletter sits at the intersection of three threads. Every issue should tou
 ## 5. Cadences
 
 ### Daily
-- 5–8 items, each a 1-paragraph summary + source link
+- Aim for ~5 items, each a 1-paragraph summary + source link; strength beats count, no fixed floor
 - Sections in priority order: **AI & Decoding** / **Industry** / **Clinical & Regulatory** / **Tools & Data** / **UK** / **Research with applications**
-- Aim for ≥1 **AI & Decoding** item daily; this is the lede when present
+- ≥1 **AI & Decoding** item where the week's signal allows; this is the lede when present
 - Target: 300–500 words total
 - Time budget: 10–15 min review/edit
 

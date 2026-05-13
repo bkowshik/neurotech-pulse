@@ -3,7 +3,13 @@ title: "The Week in Neurotech — Week ww, YYYY"
 date: YYYY-MM-DD  # Monday of the week
 categories: [weekly]
 description: "One-sentence summary of this week's main thread."
+image: image.jpg
+image-alt: "One-sentence visual description for screen readers."
+resources:
+  - image.jpg
 ---
+
+![](image.jpg){fig-alt="{{< meta image-alt >}}"}
 
 Two- or three-sentence intro naming this week's themes.
 

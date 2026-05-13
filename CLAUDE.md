@@ -25,7 +25,7 @@ Order of priority across threads:
 Search in priority order. Use `web_search` and `web_fetch`. **The canonical source list is `SOURCES.md` at the repo root** — start there, but don't be a slave to it; new high-quality primary sources are welcome. If you discover a source worth keeping, add it to `SOURCES.md` (or flag it for the user to add).
 
 **Time windows:**
-- Daily → **last 7 days**, ranked by relevance to the priority threads (AI & Decoding first). Pick the strongest 5–8 items; don't pad with stale material.
+- Daily → **last 7 days**, ranked by relevance to the priority threads (AI & Decoding first). Aim for ~5 items; strength beats count, no fixed floor.
 - Weekly → last 7 days (re-read the week's daily posts in `daily/` first if they exist)
 - Monthly → last 30 days (re-read the month's weekly posts first)
 
@@ -50,7 +50,13 @@ title: "Neurotech Pulse — DD Month YYYY"
 date: YYYY-MM-DD
 categories: [daily]
 description: "One-sentence summary of the day's lede."
+image: image.jpg
+image-alt: "One-sentence visual description for screen readers."
+resources:
+  - image.jpg
 ---
+
+![](image.jpg){fig-alt="{{< meta image-alt >}}"}
 
 One- or two-sentence framing of the day's lede.
 
@@ -93,7 +99,13 @@ title: "The Week in Neurotech — Week ww, YYYY"
 date: YYYY-MM-DD
 categories: [weekly]
 description: "..."
+image: image.jpg
+image-alt: "One-sentence visual description for screen readers."
+resources:
+  - image.jpg
 ---
+
+![](image.jpg){fig-alt="{{< meta image-alt >}}"}
 
 Two- or three-sentence intro naming this week's themes.
 
@@ -128,7 +140,13 @@ title: "Neurotech Pulse — Month YYYY"
 date: YYYY-MM-01
 categories: [monthly]
 description: "..."
+image: image.jpg
+image-alt: "One-sentence visual description for screen readers."
+resources:
+  - image.jpg
 ---
+
+![](image.jpg){fig-alt="{{< meta image-alt >}}"}
 
 Three- or four-sentence intro on the month's shape.
 
@@ -155,6 +173,37 @@ Rotation for the deep dive — check the last 3 monthly posts and pick whichever
 - `date` — ISO format, used by Quarto for ordering
 - `categories` — always include the cadence (`daily` / `weekly` / `monthly`); may add topic tags like `ai`, `industry`, `uk`
 - `description` — one sentence; this shows in listings and previews
+- `image` — filename of the hero image, always `image.jpg`, sitting next to `index.qmd` in the post folder
+- `image-alt` — one-sentence accessibility description of the hero
+- `resources` — list including `image.jpg` so Quarto copies the file into `_site/` at render time
+
+## Hero image
+
+Every post gets a hero image. Generate one **every time** — daily, weekly, monthly.
+
+**Generation.** Use Google Gemini (gemini.google.com). The prompt must include **the full text of the post** so the model can extract a concept that fits the day's content, plus an explicit image brief. Gemini defaults to clichés if you under-specify, so the brief always carries:
+
+- Aspect ratio 16:9, landscape.
+- Editorial register — serious journal cover or arXiv preprint figure, not a marketing splash and not a stock photo.
+- Flat, vector-feeling, restrained. No 3D chrome, sparkles, bokeh, halos, glow.
+- Cool muted palette: deep navy or slate background, mostly muted slate-grey strokes, **one** restrained accent colour (soft cyan, electric blue, or warm amber) used sparingly.
+- Plenty of negative space.
+- **Absolutely no text, letters, numbers, labels, watermarks, dates, or titles inside the image.** Zero typography. Quarto renders the post title in HTML; the image must not duplicate it.
+- **No** human figures, faces, heads, headsets, hands, anatomical brains, neurons-as-glowing-blobs, sci-fi labs, or cityscapes. These are the defaults the models reach for; banning them explicitly is necessary.
+
+If the first render comes back with text or clichés, regenerate — don't accept and ship. A small generator watermark (e.g. Gemini's diamond glyph) is fine to leave in.
+
+**File and placement.**
+- Save the file as `image.jpg` in the post folder, next to `index.qmd` — e.g. `daily/2026-05-13/image.jpg`.
+- Target a JPEG around **1600 px wide, quality ~85** — usually lands at 80–150 KB for this style. Avoid committing multi-megabyte originals; the repo doesn't need archival masters.
+- If the generator gave a PNG, convert to JPEG at the same target before saving: `convert source.png -resize 1600x -strip -quality 85 image.jpg`.
+
+**Quarto wiring.** Three things have to be true or the image won't render:
+1. The post YAML includes `image: image.jpg`, `image-alt: "..."`, and `resources: [image.jpg]`. The `resources` line is what makes Quarto copy the file into `_site/{cadence}/YYYY-.../`. Without it, the listing reference 404s.
+2. The cadence index file (`daily/index.qmd`, `weekly/index.qmd`, `monthly/index.qmd`) has `image` in its `listing.fields` array. Without that the thumbnail won't appear in the listing.
+3. The file actually exists at the path before you render.
+
+After render, verify by checking `_site/{cadence}/YYYY-.../`. The folder should contain both `index.html` **and** `image.jpg`. If `image.jpg` is missing, `resources` is missing or misspelled.
 
 ## Voice and style
 
@@ -183,7 +232,8 @@ Run this checklist:
 - [ ] UK items flagged
 - [ ] Preprints flagged
 - [ ] File saved to the correct path (`{cadence}/YYYY-.../index.qmd`)
-- [ ] YAML front matter present and valid
+- [ ] YAML front matter present and valid, including `image`, `image-alt`, `resources`
+- [ ] Hero image generated, saved as `image.jpg` (~1600 px, ~100 KB JPEG) in the post folder, no text in the image
 - [ ] No fabricated facts, quotes, or names
 
 ## After saving

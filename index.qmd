@@ -1,6 +1,6 @@
 ---
 title: "Neurotech Pulse"
-subtitle: "Daily signals, weekly synthesis, monthly highlights from applied neurotechnology."
+subtitle: "Tracking the pulse of applied neurotechnology — AI, decoders, devices, and the data science underneath."
 listing:
   - id: latest
     contents:
@@ -9,7 +9,7 @@ listing:
       - "monthly/*/index.qmd"
     sort: "date desc"
     type: default
-    fields: [date, title, categories, description, reading-time]
+    fields: [image, date, title, categories, description, reading-time]
     feed: true
     page-size: 20
     categories: true
@@ -17,16 +17,6 @@ listing:
     filter-ui: false
 page-layout: full
 ---
-
-A curated, Claude-authored feed on applied neurotechnology — the companies, products, clinical deployments, and the AI underneath. **AI in neurotech is the lede.**
-
-Three cadences:
-
-- **[Daily](daily/)** — 5–8 items, terse, source-linked.
-- **[Weekly](weekly/)** — themes, *Frontier Watch*, what I'm watching next.
-- **[Monthly](monthly/)** — top 10, deep dive, UK jobs & funding.
-
-## Latest
 
 ::: {#latest}
 :::
