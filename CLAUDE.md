@@ -90,7 +90,7 @@ Skip sections with no material that day. Don't pad.
 ### Weekly
 
 **Path:** `weekly/YYYY-Www/index.qmd` (ISO week — e.g. `2026-W20`)
-**Date in front matter:** the Monday of the week
+**Date in front matter:** the **Sunday** of the week (i.e. the publish date — the day the week closes). This keeps the post above the dailies it synthesises in date-sorted listings.
 **Length:** 600–900 words
 
 ```markdown
@@ -131,13 +131,13 @@ Voice: first-person where natural, opinionated, critical. Not a wire service.
 ### Monthly
 
 **Path:** `monthly/YYYY-MM/index.qmd`
-**Date in front matter:** the 1st of the month
+**Date in front matter:** the **last day of the month being summarised** (e.g. `2026-05-31` for the May issue). This keeps the post above the weeklies and dailies it synthesises in date-sorted listings.
 **Length:** 1500–2500 words
 
 ```markdown
 ---
 title: "Neurotech Pulse — Month YYYY"
-date: YYYY-MM-01
+date: YYYY-MM-DD  # last day of the month being summarised
 categories: [monthly]
 description: "..."
 image: image.jpg

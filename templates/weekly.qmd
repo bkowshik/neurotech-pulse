@@ -1,6 +1,6 @@
 ---
 title: "The Week in Neurotech — Week ww, YYYY"
-date: YYYY-MM-DD  # Monday of the week
+date: YYYY-MM-DD  # Sunday of the week (publish date — keeps the post above the dailies it synthesises)
 categories: [weekly]
 description: "One-sentence summary of this week's main thread."
 image: image.jpg
