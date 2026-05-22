@@ -1,0 +1,28 @@
+---
+title: "Neurotech Pulse — 22 May 2026"
+date: 2026-05-22
+categories: [daily, ai]
+description: "Sparse autoencoders pry open three EEG foundation models and find clinical concepts tangled together; Nature charts how fast China's LLM-decoder implants are heading for commercial use."
+image: image.jpg
+image-alt: "On a deep navy field, a tight bundle of muted slate signal traces on the left fans out into separated parallel strands on the right, with a single strand picked out in cyan."
+resources:
+  - image.jpg
+---
+
+![](image.jpg){fig-alt="{{< meta image-alt >}}"}
+
+The scrutiny of EEG foundation models keeps moving inward — from whether they beat task-specific baselines to what their representations actually encode. Today's lede points sparse autoencoders, the tool that pries open LLMs, at three of them.
+
+## AI & Decoding
+
+**Sparse autoencoders open up three EEG foundation models, and the clinical concepts inside are tangled.** Lehn-Schiøler and colleagues (Technical University of Denmark, with Stanford and clinical-epileptology co-authors) train TopK sparse autoencoders on SleepFM, REVE and LaBraM, then ground the recovered features against four clinical concepts — abnormality, age, sex and medication status. The result is not flattering. A "target vs. off-target" probe metric sorts features into three regimes — selectively steerable, encoded-but-entangled, and not-encoded — and several clinical factors land in the entangled bin, including an age–pathology confound where suppressing one concept corrupts the other. A spectral decoder ties those manipulations back to physiological signatures like slow-wave suppression. After NeuralBench's "FMs only marginally beat task-specific models" ten days ago, this is the same scrutiny moving from the benchmark to the model's internals — the more useful direction. (Preprint, not peer reviewed.) [arXiv:2605.13930](https://arxiv.org/abs/2605.13930)
+
+**Nature charts China's decoder stack moving from trials toward commercial use.** A feature published 20 May tracks how fast Chinese firms are folding large language models into brain implants in place of conventional signal processing — led by NeuroXess in Shanghai, whose cortical-surface device drives a real-time Mandarin decoder running at ~300 characters per minute, above the ~220 of average speech (the underlying result, in Science Advances, dates to late 2025). The regulator cleared Neuracle's hand-grasp implant for commercial sale in March. Little here is brand new, but the framing matters: the LLM-as-decoder pattern is now the default on both sides of the Pacific, and the deployment side isn't waiting on the interpretability questions above. [Nature](https://www.nature.com/articles/d41586-026-01468-x) · [Science Advances](https://www.science.org/doi/10.1126/sciadv.adz9968)
+
+## Industry
+
+**Neurosoft Bioelectronics closes a $7.5M seed for soft-electrode brain interfaces.** The oversubscribed round, announced 20 May and led by Skybound Venture Capital with PL Capital, IAG Capital Partners and Connecticut Innovations, takes the company past $20M raised. Neurosoft's pitch is a thin, stretchable 64-channel array; it reports use in 10 patients across two trials — UTHealth Houston and UMC Utrecht — for epilepsy-surgery mapping. Small money by BCI standards, but after a fortnight of industry near-silence it is a real signal, and the soft-electrode form factor is the more interesting half of the story. [BusinessWire](https://www.businesswire.com/news/home/20260520357988/en/Neurosoft-Bioelectronics-Closes-7.5M-Oversubscribed-Seed-Round-to-Build-Stretchable-and-Scalable-Brain-Computer-Interfaces)
+
+## Research with applications
+
+**A non-invasive BCI stimulus that drops the flicker — and, for now, some of the speed.** Scheppink, Herpers, Thielen and Volosyak introduce code-modulated motion VEPs (c-MVEP): pseudo-random sequences driven by object motion rather than the eye-straining flicker most non-invasive BCIs rely on. In a four-class online test it reached 85.7% accuracy at 2.6s per selection — usable, but behind code-modulated flicker (c-VEP) at 97.8% and 1.15s. An honest result worth logging: motion is the gentler stimulus, and it is not free yet. (Preprint.) [arXiv:2605.15801](https://arxiv.org/abs/2605.15801)
