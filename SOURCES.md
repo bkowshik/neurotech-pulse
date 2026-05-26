@@ -65,6 +65,9 @@ Canonical list of sources for Neurotech Pulse. Organised by editorial priority t
 - [Inbrain Neuroelectronics](https://www.inbrain-neuroelectronics.com/news)
 - [Onward Medical](https://onwd.com/news/)
 - [Cortical Labs](https://corticallabs.com/news.html)
+- [Cumulus Neuroscience](https://www.cumulusneuro.com/) 🇬🇧 — Belfast, at-home clinical EEG headset; pharma & dementia-study partnerships, peer-reviewed neuroplasticity validation
+- [Flow Neuroscience](https://www.flowneuroscience.com/blog/) 🇬🇧 — UK/Sweden, at-home tDCS for depression; FDA-cleared FL-100, NHS deployments
+- [Neurable](https://www.neurable.com/) — consumer-form-factor BCI (EEG headphones, HyperX gaming headset); licensing model for wearables
 
 **Trade press**
 - [STAT News — neurotech](https://www.statnews.com/category/tech/) **(paywall — headlines free)**
@@ -125,6 +128,8 @@ Canonical list of sources for Neurotech Pulse. Organised by editorial priority t
 - [Cogitat](https://www.cogitat.io/)
 - [Galvani Bioelectronics](https://www.galvani.bio/)
 - [Neurokopia](https://www.neurokopia.com/)
+- [Cumulus Neuroscience](https://www.cumulusneuro.com/) — Belfast, clinical at-home EEG (also in Industry company blogs)
+- [Flow Neuroscience](https://www.flowneuroscience.com/) — UK/Sweden, at-home tDCS depression device (also in Industry company blogs)
 
 **Labs with industry partnerships**
 - Imperial, UCL, Oxford, Cambridge, Edinburgh — neurotechnology / bioelectronics groups
